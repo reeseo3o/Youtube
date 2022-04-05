@@ -3,9 +3,7 @@ import { useState } from "react";
 import { useEffect } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import VideoList from "./components/videolist/VideoList";
 import Searchbar from "./components/searchbar/Searchbar";
-import Videoview from "./components/videoview/Videoview";
 import Home from "./pages/Home";
 import Search from "./pages/Search";
 import Watching from "./pages/Watching";
@@ -45,12 +43,12 @@ function App({ youtube }) {
   }, [videoItems, selectView]);
 
   return (
-    <div className="App">
+    <div className='App'>
       <BrowserRouter>
         <Searchbar searchResult={search} clickLogo={clickLogo} />
         <Routes>
           <Route
-            path="/"
+            path='/'
             element={
               <Home
                 videoItems={videoItems}
@@ -60,7 +58,7 @@ function App({ youtube }) {
             }
           />
           <Route
-            path="/search"
+            path='/search'
             element={
               <Search
                 videoItems={videoItems}
@@ -70,7 +68,7 @@ function App({ youtube }) {
             }
           />
           <Route
-            path="/watch"
+            path='/watch'
             element={
               <Watching
                 videoItems={videoItems}
