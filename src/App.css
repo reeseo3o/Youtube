@@ -1,0 +1,29 @@
+.App {
+  text-align: center;
+}
+
+.content {
+  display: flex;
+}
+.view {
+  flex: 1 1 70%;
+}
+.list {
+  flex: 1 1 30%;
+}
+.contents-wrap {
+  display: flex;
+}
+.contents-wrap .sidebar {
+  flex: 0 0 70px;
+}
+@media screen and (max-width: 1200px) {
+  .content {
+    flex-direction: column;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: #4d4d4d;
+}

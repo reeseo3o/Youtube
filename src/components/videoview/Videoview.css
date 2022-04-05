@@ -1,0 +1,18 @@
+.viewbox {
+  width: 100%;
+}
+
+.viewbox .videoframe {
+  width: 100%;
+  height: 550px;
+  border: none;
+}
+
+.txtcontainer {
+  font-size: 14px;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  word-break: break-all;
+}
