@@ -35,7 +35,7 @@ function App({ youtube }) {
       setVideoItems(videos);
       defaultVideos = videos;
     });
-  }, []);
+  }, [youtube]);
 
   useEffect(() => {
     sessionStorage.setItem("defaultVideos", JSON.stringify(defaultVideos));
